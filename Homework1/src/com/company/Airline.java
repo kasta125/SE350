@@ -17,7 +17,7 @@ public class Airline {
 
     @Override
     public String toString() {
-        return "Airline name is : " + name;
+        return name;
     }
 
     @Override
