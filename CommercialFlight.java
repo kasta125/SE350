@@ -2,9 +2,10 @@ import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Objects;
 import java.util.UUID;
+import Main.Airline airline;
 
 public class Flight {
-    Main.Airline airline;
+    Airline airline;
     Main.Airport origin;
     Main.Airport destination;
     String flightNumber;
