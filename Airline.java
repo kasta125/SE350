@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Airline {
+public class Airline{
     public String name;
 
     public Airline(String name){

@@ -1,6 +1,9 @@
 import java.util.Locale;
 import java.util.Objects;
 
+//Need to create a Flyweight pattern to initiate an instance of Airport
+
+
 public class Airport {
     public String name;
 

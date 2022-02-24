@@ -6,7 +6,9 @@ public class TravelManager {
         //Flight flightInfo = Flight.toString();
         //System.out.println('Airline: '+ comp + '\nAirport: '+ city + '\nFlight: '+ flightInfo);
 
-        FlightManager flightManager = FlightManager.createFlight();
-        System.out.println(flightManager);
+        FlightManager flightManagerP = FlightManager.createFlight("passangerFlight",Virgin,Midway,Tampa);
+        FlightManager flightManagerC = FlightManager.createFlight("commericalFlight",Turkish,Ohare,JFK);
+        System.out.println(flightManagerP);
+        System.out.println(flightManagerC);
     }
 }
