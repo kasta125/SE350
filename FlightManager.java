@@ -29,6 +29,8 @@ public final class FlightManager {
     }
 
     public String createFlight(String type, Airline airline, Airport origin, Airport destination) {
+        System.out.println("A flight is being created.");
+
         Flight flight = FlightFactory.createFlight(type, airline, origin, destination);
         flights.add(flight);
 
@@ -36,6 +38,7 @@ public final class FlightManager {
     }
 
     public Optional<Flight> getFlightByFlightNumber(String flightNumber) {
+        System.out.println("Flight #: " + flightNumber + "is being retrieved.");
         return flights.stream()
                 .filter(flt -> flt.getFlightNumber().equals(flightNumber))
                 .findFirst();
